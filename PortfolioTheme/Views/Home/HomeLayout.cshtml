@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Basic Page Needs
@@ -18,7 +17,6 @@
     <!--[if lt IE 9]>
     @Scripts.Render("~/bundles/proenhance")
     <![endif]-->
-
     <!-- Favicons
     ================================================== -->
     <link rel="shortcut icon" href="Content/img/favicon.ico" type="image/x-icon">
@@ -53,18 +51,21 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                    <li><a href="#tf-home" class="scroll">Home</a></li>
+                    <li><a href="#tf-services" class="scroll">Services</a></li>
+                    <li><a href="#tf-about" class="scroll">About</a></li>
+                    <li><a href="#tf-works" class="scroll">Works</a></li>
+                    <li><a href="#tf-process" class="scroll">Process</a></li>
+                    <li><a href="#tf-pricing" class="scroll">Pricing</a></li>
+                    <li><a href="#tf-blog" class="scroll">Blog</a></li>
+                    <li><a href="#tf-contact" class="scroll">Contact</a></li>
+                    <li>@Html.ActionLink("Admin", "Admin", "Home")</li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
-    <main>
-        <div class="container"><!-- container -->
-            @RenderBody()
-        </div><!-- end container -->
-    </main>
+    @RenderBody()
 
     <!-- Footer
     ================================================== -->
